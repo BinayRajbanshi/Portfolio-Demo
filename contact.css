@@ -1,0 +1,166 @@
+.contact{
+    font-family: 'Poppins', sans-serif;
+}
+.contact .max-width{
+    max-width: 1300px;
+    margin-inline: auto;
+    padding: 0 80px;
+}
+.contact .max-width .title::after{
+    content: "get in touch";
+}
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .row .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .row .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+    
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .textarea textarea,
+.contact .right form .field input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+     padding: 0 15px;
+     font-size: 17px;
+     font-family: 'Poppins' , sans-serif;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+.contact .right form .textarea textarea{
+    height: 80px;
+
+}
+.contact .right form .textarea textarea{
+    
+    resize: none;
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+    margin-top:10px ;
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid crimson;
+    background-color: crimson;
+    color: #fff;
+    font-size:20px ;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    color: crimson;
+    background: none;
+}
+
+
+
+/* footer section styling */
+.footer{
+    font-family: 'Poppins' , sans-serif;
+    background-color: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+.footer span a {
+    color: crimson;
+    text-decoration: none;
+}
+
+/* scroll up btn styling */
+.scroll-up-button{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 1111;
+    font-size: 28px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease ;
+}
+.scroll-up-button.active{
+    opacity: 1;
+    pointer-events: all;
+    bottom: 30px;
+}
+
+
+
+
+
+
+@media screen and (max-width:1000px) {
+    .contact .contact-content .column{
+        width: 100%;
+    }
+}
+@media screen and (max-width:680px) {
+    .contact .max-width{
+        max-width: 94%;
+        margin-inline: auto;
+        padding: 0 0px;
+    }
+}
